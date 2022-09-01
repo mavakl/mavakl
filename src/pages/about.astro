@@ -1,0 +1,47 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer/index.jsx';
+import Nav from '../components/Nav/index.jsx';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="Wann & Wo" description="Wann & Wo" />
+		<style lang="scss">
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>Wann & Wo</h1>
+			<div class="bio wrapper wrapper__readable mt8">
+				<p>
+					Niedersachsenstraße 29 <br>
+					21423 Winsen (Luhe)
+				</p>
+				<p>
+					2. - 5. September <br>
+					Fr.: 14 - 20 Uhr <br>
+					Sa.: 9 - 13 und 14 - 20 <br>
+					So.: 9 - 13 <br>
+					Mo.: 9 - 13 und 14 - 20
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
